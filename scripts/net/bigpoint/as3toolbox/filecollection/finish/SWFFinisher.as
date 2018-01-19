@@ -1,6 +1,5 @@
 package net.bigpoint.as3toolbox.filecollection.finish
 {
-   import dyjihoril.Qure;
    import flash.display.Bitmap;
    import flash.display.BitmapData;
    import flash.display.DisplayObject;
@@ -16,6 +15,7 @@ package net.bigpoint.as3toolbox.filecollection.finish
    import flash.text.TextFieldAutoSize;
    import flash.text.TextFormat;
    import flash.utils.Dictionary;
+   import hokohuju.Cikudajih;
    import net.bigpoint.as3toolbox.filecollection.event.FileCollectionEvent;
    import net.bigpoint.as3toolbox.filecollection.getDefinitionNames;
    import net.bigpoint.as3toolbox.filecollection.vo.FileVO;

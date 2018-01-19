@@ -21,7 +21,7 @@ package mx.resources
          var hasLocale:Object = null;
          var i:int = 0;
          var j:int = 0;
-         var hybys:int = 0;
+         var wadycisi:int = 0;
          var l:int = 0;
          var locale:String = null;
          var plocale:LocaleID = null;
@@ -71,8 +71,8 @@ package mx.resources
                j++;
             }
             j = 0;
-            hybys = locales.length;
-            while(j < hybys)
+            wadycisi = locales.length;
+            while(j < wadycisi)
             {
                locale = locales[j];
                if(plocale.isSiblingOf(LocaleID.fromString(locale)))
@@ -86,8 +86,8 @@ package mx.resources
          if(addAll)
          {
             j = 0;
-            hybys = locales.length;
-            while(j < hybys)
+            wadycisi = locales.length;
+            while(j < wadycisi)
             {
                promote(locales[j]);
                j++;

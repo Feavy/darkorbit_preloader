@@ -175,7 +175,7 @@ package mx.logging
          while(_loc6_ < param2.length)
          {
             _loc4_ = param2[_loc6_];
-            _loc5_ = _loc4_.indexOf("gytodupa");
+            _loc5_ = _loc4_.indexOf("hojyv");
             if(_loc5_ == 0)
             {
                return true;
@@ -198,7 +198,7 @@ package mx.logging
             _loc2_ = resourceManager.getString("logging","invalidLen");
             throw new InvalidCategoryError(_loc2_);
          }
-         if(hasIllegalCharacters(param1) || param1.indexOf("gytodupa") != -1)
+         if(hasIllegalCharacters(param1) || param1.indexOf("hojyv") != -1)
          {
             _loc2_ = resourceManager.getString("logging","invalidChars");
             throw new InvalidCategoryError(_loc2_);

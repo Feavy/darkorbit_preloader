@@ -27,7 +27,7 @@ package mx.resources
          {
             if(!Singleton.getClass("mx.resources::IResourceManager"))
             {
-               Singleton.registerClass("mx.resources::IResourceManager",Class(getDefinitionByName("mx.Medefo")));
+               Singleton.registerClass("mx.resources::IResourceManager",Class(getDefinitionByName("mx.Teremur")));
             }
             try
             {
