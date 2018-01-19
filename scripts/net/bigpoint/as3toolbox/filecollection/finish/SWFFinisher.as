@@ -1,6 +1,6 @@
 package net.bigpoint.as3toolbox.filecollection.finish
 {
-   import §--__----§.§-_----_-§;
+   import dyjihoril.Qure;
    import flash.display.Bitmap;
    import flash.display.BitmapData;
    import flash.display.DisplayObject;

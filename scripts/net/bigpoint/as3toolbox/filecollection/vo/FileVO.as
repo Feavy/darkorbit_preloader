@@ -1,7 +1,7 @@
 package net.bigpoint.as3toolbox.filecollection.vo
 {
-   import §----_§.§-_______§;
    import flash.utils.ByteArray;
+   import nuw.Zylydago;
    
    public class FileVO
    {
@@ -337,7 +337,7 @@ package net.bigpoint.as3toolbox.filecollection.vo
                return;
             }
             addr55:
-            this.fileHash = §-_______§.§---___--§(param1 as ByteArray);
+            this.fileHash = Zylydago.zybuhute(param1 as ByteArray);
             if(_loc4_)
             {
                §§goto(addr74);

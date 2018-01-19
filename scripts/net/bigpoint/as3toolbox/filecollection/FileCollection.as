@@ -1,7 +1,5 @@
 package net.bigpoint.as3toolbox.filecollection
 {
-   import §----_§.§-_______§;
-   import §-_-_--__§.§-_--_-_§;
    import flash.events.Event;
    import flash.events.EventDispatcher;
    import flash.events.HTTPStatusEvent;
@@ -12,6 +10,7 @@ package net.bigpoint.as3toolbox.filecollection
    import flash.net.URLLoaderDataFormat;
    import flash.net.URLRequest;
    import flash.utils.Timer;
+   import jevacyg.Jazywilu;
    import mx.logging.ILogger;
    import mx.logging.Log;
    import net.bigpoint.as3toolbox.filecollection.event.FileCollectionEvent;
@@ -26,6 +25,7 @@ package net.bigpoint.as3toolbox.filecollection
    import net.bigpoint.as3toolbox.filecollection.vo.FileVO;
    import net.bigpoint.as3toolbox.filecollection.vo.LoadVO;
    import net.bigpoint.as3toolbox.filecollection.vo.LocationVO;
+   import nuw.Zylydago;
    
    public class FileCollection extends EventDispatcher
    {
@@ -673,7 +673,7 @@ package net.bigpoint.as3toolbox.filecollection
                   }
                   while(true)
                   {
-                     this._resourceFileHash = §-_______§.hash(contents);
+                     this._resourceFileHash = Zylydago.hash(contents);
                   }
                }
                addr168:

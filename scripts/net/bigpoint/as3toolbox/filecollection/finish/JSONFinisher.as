@@ -1,6 +1,6 @@
 package net.bigpoint.as3toolbox.filecollection.finish
 {
-   import §--__----§.§---___-_§;
+   import dyjihoril.Wyr;
    import net.bigpoint.as3toolbox.filecollection.vo.FileVO;
    
    public class JSONFinisher extends FileCollectionFinisher
@@ -39,7 +39,7 @@ package net.bigpoint.as3toolbox.filecollection.finish
       {
          var _loc1_:Boolean = false;
          var _loc2_:Boolean = true;
-         return §---___-_§.§-__-__-_§(fileVO.getData(),false);
+         return Wyr.liz(fileVO.getData(),false);
       }
    }
 }
