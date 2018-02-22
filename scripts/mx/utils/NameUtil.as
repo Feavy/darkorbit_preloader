@@ -49,29 +49,33 @@ package mx.utils
          try
          {
             _loc3_ = param1;
-            while(_loc3_ != null)
+            while(true)
             {
-               if(_loc3_.parent && _loc3_.stage && _loc3_.parent == _loc3_.stage)
+               if(_loc3_ != null)
                {
-                  break;
-               }
-               _loc4_ = "id" in _loc3_ && _loc3_["id"]?_loc3_["id"]:_loc3_.name;
-               if(_loc3_ is IRepeaterClient)
-               {
-                  _loc5_ = IRepeaterClient(_loc3_).instanceIndices;
-                  if(_loc5_)
+                  if(_loc3_.parent && _loc3_.stage && _loc3_.parent == _loc3_.stage)
                   {
-                     _loc4_ = _loc4_ + ("[" + _loc5_.join("][") + "]");
+                     break;
                   }
+                  _loc4_ = "id" in _loc3_ && _loc3_["id"]?_loc3_["id"]:_loc3_.name;
+                  if(_loc3_ is IRepeaterClient)
+                  {
+                     _loc5_ = IRepeaterClient(_loc3_).instanceIndices;
+                     if(_loc5_)
+                     {
+                        _loc4_ = _loc4_ + ("[" + _loc5_.join("][") + "]");
+                     }
+                  }
+                  _loc2_ = _loc2_ == null?_loc4_:_loc4_ + "." + _loc2_;
+                  _loc3_ = _loc3_.parent;
+                  continue;
                }
-               _loc2_ = _loc2_ == null?_loc4_:_loc4_ + "." + _loc2_;
-               _loc3_ = _loc3_.parent;
             }
          }
          catch(e:SecurityError)
          {
          }
-         return _loc2_;
+         break loop0;
       }
       
       public static function getUnqualifiedClassName(param1:Object) : String

@@ -1,10 +1,10 @@
 package net.bigpoint.darkorbit.preloader.error
 {
+   import §----_§.§-_______§;
    import flash.events.ErrorEvent;
    import flash.events.UncaughtErrorEvent;
    import flash.events.UncaughtErrorEvents;
-   import net.bigpoint.darkorbit.Tegos;
-   import qomowyre.Gukyn;
+   import net.bigpoint.darkorbit.§-__-_---§;
    
    public class GlobalErrorHandlerBpEventStream
    {
@@ -55,11 +55,11 @@ package net.bigpoint.darkorbit.preloader.error
             _loc3_ = "Unspecific";
             _loc2_ = "A non-Error, non-ErrorEvent type was thrown and uncaught.";
          }
-         var _loc6_:String = Gukyn.hash(_loc4_ + _loc3_ + _loc2_ + _loc5_);
+         var _loc6_:String = §-_______§.hash(_loc4_ + _loc3_ + _loc2_ + _loc5_);
          if(this._history[_loc6_] !== true)
          {
             this._history[_loc6_] = true;
-            Tegos.gamiwyki("flash.error",{
+            §-__-_---§.§-____----§("flash.error",{
                "message":_loc2_,
                "name":_loc3_,
                "errorID":_loc4_,

@@ -65,7 +65,6 @@ package mx.logging
       public static function addTarget(param1:ILoggingTarget) : void
       {
          var _loc2_:Array = null;
-         var _loc3_:ILogger = null;
          var _loc4_:* = null;
          var _loc5_:String = null;
          if(param1)
@@ -96,7 +95,6 @@ package mx.logging
       public static function removeTarget(param1:ILoggingTarget) : void
       {
          var _loc2_:Array = null;
-         var _loc3_:ILogger = null;
          var _loc4_:* = null;
          var _loc5_:int = 0;
          var _loc6_:String = null;
@@ -169,13 +167,12 @@ package mx.logging
       private static function categoryMatchInFilterList(param1:String, param2:Array) : Boolean
       {
          var _loc4_:String = null;
-         var _loc3_:Boolean = false;
          var _loc5_:int = -1;
          var _loc6_:uint = 0;
          while(_loc6_ < param2.length)
          {
             _loc4_ = param2[_loc6_];
-            _loc5_ = _loc4_.indexOf("hojyv");
+            _loc5_ = _loc4_.indexOf("*");
             if(_loc5_ == 0)
             {
                return true;
@@ -198,7 +195,7 @@ package mx.logging
             _loc2_ = resourceManager.getString("logging","invalidLen");
             throw new InvalidCategoryError(_loc2_);
          }
-         if(hasIllegalCharacters(param1) || param1.indexOf("hojyv") != -1)
+         if(hasIllegalCharacters(param1) || param1.indexOf("*") != -1)
          {
             _loc2_ = resourceManager.getString("logging","invalidChars");
             throw new InvalidCategoryError(_loc2_);

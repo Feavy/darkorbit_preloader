@@ -250,6 +250,7 @@ class Finder
                   if(this._data.readASInt())
                   {
                      this._data.readUnsignedByte();
+                     break;
                   }
                   break;
                default:
@@ -382,7 +383,6 @@ class SWFByteArray extends ByteArray
       this._bitIndex = param2;
       var _loc3_:uint = this[super.position];
       var _loc4_:Number = 0;
-      var _loc5_:Number = 0;
       var _loc6_:uint = 8 - param2;
       var _loc7_:Number = param1 - _loc6_;
       if(_loc7_ > 0)
@@ -434,7 +434,6 @@ class SWFByteArray extends ByteArray
       var _loc5_:String = null;
       var _loc2_:String = "";
       var _loc3_:uint = param1.position;
-      var _loc4_:uint = 0;
       param1.position = 0;
       while(param1.bytesAvailable)
       {
